@@ -1,1 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Sanchez');
 
+ion-content{
+  background: linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1 );
+}
+
+ion-card{
+  box-shadow:3px 3px 5px 0 #9b9b9b;
+  background: #ffffff;
+}
+
+ion-card-header{
+  color: #4d94b9;
+  font-family: Roboto, sans-serif;
+}
+
+ion-card-title{
+  color: #4d94b9;
+  text-align: center;
+
+}
+
+ion-card-content{
+  font-family: Roboto, sans-serif;
+  color: #4d94b9;
+  text-align: center;
+}
