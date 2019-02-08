@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Tab1Page } from './tab1.page';
 
-describe('Tab1Page', () => {
+describe('Tab4Page', () => {
   let component: Tab1Page;
   let fixture: ComponentFixture<Tab1Page>;
 

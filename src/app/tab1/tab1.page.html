@@ -1,20 +1,32 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab One
+      Rythme cardiaque
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card class="welcome-card">
-    <ion-img src="/assets/Smokeless2.png"></ion-img>
+<ion-content color="linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1)">
+
+  <ion-card>
+    <ion-segment>
+      <ion-segment-button checked>
+        <ion-label>Jour</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Semaine</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Mois</ion-label>
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-label>Année</ion-label>
+      </ion-segment-button>
+    </ion-segment>
     <ion-card-header>
-      <ion-card-subtitle>Smokeless</ion-card-subtitle>
-      <ion-card-title>Wesh alors</ion-card-title>
+      <ion-card-title>Historique de votre rythme cardiaque</ion-card-title>
+      <hr/>
     </ion-card-header>
-    <ion-card-content>
-      <p>oui</p>
-    </ion-card-content>
+
   </ion-card>
 </ion-content>

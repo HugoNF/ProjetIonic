@@ -5,8 +5,9 @@ ion-content{
 }
 
 ion-card{
-  box-shadow:3px 3px 5px 0 #9b9b9b;
+  box-shadow: 1px 1px 12px #555;
   background: #ffffff;
+  margin-top: 25px;
 }
 
 ion-card-header{
@@ -22,6 +23,6 @@ ion-card-title{
 
 ion-card-content{
   font-family: Roboto, sans-serif;
-  color: #4d94b9;
+  color: #000000;
   text-align: center;
 }
