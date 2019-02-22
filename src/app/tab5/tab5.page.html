@@ -1,10 +1,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-
+      Podomètre
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 
 <ion-content color="linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1)">
   <ion-card>
@@ -27,19 +28,36 @@
       content
     </ion-card-content>
   </ion-card>
+
   <ion-card>
     <ion-card-header>
       <ion-card-title>Nombre de pas :</ion-card-title>
       <hr/>
     </ion-card-header>
 
-    <ion-card-content>
-      content
+    <ion-card-content padding>
+      <div *ngIf="data!=null">
+        <div style="display: none">{{data.startDate}}</div>
+        <div style="display: none">{{data.endDate}}</div>
+        <div>{{data.numberOfSteps}}</div>
+      </div>
     </ion-card-content>
+
+
   </ion-card>
+
   <ion-card>
-    <ion-card-content>
-      <canvas #lineCanvas></canvas>
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content (click)="displayChart()">
+      <canvas #barCanvas></canvas>
     </ion-card-content>
   </ion-card>
+
+  <ion-button routerLink="/tabs/tab1" class="ion-text-center" shape="round">Menu</ion-button>
+
+
+
+
 </ion-content>

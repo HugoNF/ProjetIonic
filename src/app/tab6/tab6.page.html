@@ -8,18 +8,20 @@
 
 <ion-content color="linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1)">
 
+
+
   <ion-card>
     <ion-segment>
-      <ion-segment-button checked>
-        <ion-label>Jour</ion-label>
+      <ion-segment-button checked (click)="displayChart()" >
+        <ion-label >Jour</ion-label>
       </ion-segment-button>
-      <ion-segment-button>
+      <ion-segment-button (click)="displayChart()" >
         <ion-label>Semaine</ion-label>
       </ion-segment-button>
-      <ion-segment-button>
+      <ion-segment-button (click)="displayChart()" >
         <ion-label>Mois</ion-label>
       </ion-segment-button>
-      <ion-segment-button>
+      <ion-segment-button (click)="displayChart()" >
         <ion-label>Année</ion-label>
       </ion-segment-button>
     </ion-segment>
@@ -27,6 +29,13 @@
       <ion-card-title>Historique de votre rythme cardiaque</ion-card-title>
       <hr/>
     </ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas> </canvas>
 
+
+    </ion-card-content>
   </ion-card>
+
+  <ion-button routerLink="/tabs/tab1" class="ion-text-center" shape="round">Menu</ion-button>
+
 </ion-content>

@@ -40,7 +40,6 @@ export class UserCreateComponent implements OnInit {
 
         this.apiService.createUsers(this.register.value).subscribe((response) => {
             console.log(response);
-            this.router.navigateByUrl('./tabs/tab1');
         });
     }
 
