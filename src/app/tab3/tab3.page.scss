@@ -2,3 +2,32 @@ ion-img {
   max-width: 25%;
   margin-bottom: 20%
 }
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto|Sanchez');
+
+  ion-content{
+    background: linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1 );
+  }
+
+  ion-card{
+    box-shadow: 1px 1px 12px #555;
+    background: #ffffff;
+    margin-top: 25px;
+  }
+
+  ion-card-header{
+    color: #4d94b9;
+    font-family: Roboto, sans-serif;
+  }
+
+  ion-card-title{
+    color: #4d94b9;
+    text-align: center;
+
+  }
+
+  ion-card-content{
+    font-family: Roboto, sans-serif;
+    color: #000000;
+    text-align: center;
+  }
