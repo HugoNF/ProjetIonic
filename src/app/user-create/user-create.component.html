@@ -1,0 +1,60 @@
+<ion-header>
+  <h1>Inscription</h1>
+</ion-header>
+
+
+<ion-content>
+
+<form [formGroup]="register" (ngSubmit)="logForm()">
+  <ion-item>
+    <ion-label position="floating">Nom</ion-label>
+    <ion-input type="text" formControlName="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Prenom</ion-label>
+    <ion-input formControlName="firstname"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Age</ion-label>
+    <ion-datetime [displayFormat]="'YYYY-MM-DD'" [pickerFormat]="'DD-MM-YYYY'" formControlName="age"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Mot de passe</ion-label>
+    <ion-input formControlName="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Sexe</ion-label>
+    <ion-checkbox formControlName="sexe"> </ion-checkbox>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input formControlName="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Depuis quand fumez vous ?</ion-label>
+    <ion-input formControlName="yearsmoking"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Cigarettes consommées / jours </ion-label>
+    <ion-input type="number" formControlName="consumtabac"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Taille du paquet</ion-label>
+    <ion-input type="number" formControlName="cigarettepaquet"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Prix du paquet </ion-label>
+    <ion-input type="number" formControlName="pricepaquet"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Taux de goudron (mg) / cigarette </ion-label>
+    <ion-input type="number" formControlName="tarlevel"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Taux de nicotine (mg) / cigarette </ion-label>
+    <ion-input type="number" formControlName="nicotinelevel"></ion-input>
+  </ion-item>
+  <ion-button type="submit" [disabled]="!register.valid">S'inscrire</ion-button>
+</form>
+
+</ion-content>
