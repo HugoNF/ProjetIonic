@@ -1,6 +1,12 @@
-ion-header {
-  margin-bottom: 20%
+ion-content{
+  background: linear-gradient(to right, #e1e1e1, #f7f7f7, #e1e1e1 );
 }
+
+ion-card{
+  background: white;
+}
+
+
 
 ion-header ion-text {
   text-align:center!important;
