@@ -38,8 +38,11 @@
     </ion-card-content>
   </ion-card>
   <ion-card>
-    <ion-card-content>
-      <canvas #lineCanvas></canvas>
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content (click)="displayChart()">
+      <canvas #barCanvas></canvas>
     </ion-card-content>
   </ion-card>
 </ion-content>
